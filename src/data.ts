@@ -5,7 +5,7 @@
             "country": "Emirates Arabes Unis",
             "place": "Dubaï",
             "label": "Hyatt Regency Creek",
-            "rating": "5*",
+            "rating": 5,
             "upto": "Dès 67€",
             "redirect_label": "VERS LES EMIRATS ARABES UNIS — DUBAÏ",
             "tags":[
@@ -18,14 +18,15 @@
                     "label": "Surclassement offert"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":"https://image.noelshack.com/fichiers/2019/39/6/1569699563-clos-du-littoral.png"
         },
         {   // 2
             "id": 2,
             "country": "Maurice",
             "place": "Grand Rivière",
             "label": "Laguna Beach Hotel & Spa",
-            "rating": "4*",
+            "rating": 4,
             "upto": "Jusqu'à -64%",
             "redirect_label": "VERS MAURICE — GRAND RIVIÈRE",
             "tags":[
@@ -38,14 +39,25 @@
                     "label": "Spa"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":[
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699703-echapee-sri-lankaise.png"
+                },
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699729-entre-culture-et-plages.png"
+                },
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699768-fairmont-dubai.png"
+                }
+            ]
         },
         {   // 3
             "id": 3,
             "country": "Emirates Arabes Unis",
             "place": "Dubaï",
             "label": "Fairmont Dubaï",
-            "rating": "5*",
+            "rating": 3,
             "upto": "Dès 99€",
             "redirect_label": "VERS LES EMIRATS ARABES UNIS — DUBAÏ",
             "tags":[
@@ -58,14 +70,15 @@
                     "label": "Rooftop"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img": "https://image.noelshack.com/fichiers/2019/39/6/1569699768-fairmont-dubai.png"
         },
         {   // 4
             "id": 4,
             "country": "Indonésie",
             "place": "Bali & Gili",
             "label": "Combiné Sthala - Marc - Patra",
-            "rating": "0*",
+            "rating": 2,
             "upto": "Dès 469€",
             "redirect_label": "VERS L'INDONÉSIE — BALI & GILI",
             "tags":[
@@ -78,14 +91,15 @@
                     "label": "Petit déjeuner inclus"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":"https://image.noelshack.com/fichiers/2019/39/6/1569699918-sthala-marc-patra.png"
         },
         {   // 5
             "id": 5,
             "country": "Maldives",
             "place": "Atoll de Noonu",
             "label": "Noku Maldives",
-            "rating": "5*",
+            "rating": 5,
             "upto": "Jusqu'à -36%",
             "redirect_label": "VERS MALDIVES — ATOLL DE NOONU",
             "tags":[
@@ -98,14 +112,15 @@
                     "label": "Massage offert"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":"https://image.noelshack.com/fichiers/2019/39/6/1569699903-noku-maldives.png"
         },
         {   // 6
             "id": 6,
             "country": "Thaïlande",
             "place": "Koh Samui",
             "label": "Impiana Resort Samui",
-            "rating": "4*",
+            "rating": 4,
             "upto": "Jusqu'à -70%",
             "redirect_label": "VERS LA THAÏLANDE — KOH SAMUI",
             "tags":[
@@ -118,14 +133,25 @@
                     "label": "Surclassement offert"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":[
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699857-japon.jpg"
+                },
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699918-sthala-marc-patra.png"
+                },
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699888-laguna-beach.png"
+                }
+            ]
         },
         {   // 7
             "id": 7,
             "country": "Maurice",
             "place": "Grand Baie",
             "label": "Clos du Littoral",
-            "rating": "4*",
+            "rating": 4,
             "upto": "Dès 538€",
             "redirect_label": "VERS MAURICE — GRAND BAIE",
             "tags":[
@@ -138,14 +164,15 @@
                     "label": "Villas avec Piscine Privée"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":"https://image.noelshack.com/fichiers/2019/39/6/1569699903-noku-maldives.png"
         },
         {   // 8
             "id": 8,
             "country": "Sri Lanka",
             "place": "Sri Lanka",
             "label": "Echappée SriLankaise",
-            "rating": "3*",
+            "rating": 1,
             "upto": "Dès 699€",
             "redirect_label": "VERS LE SRI LANKA",
             "tags":[
@@ -158,14 +185,15 @@
                     "label": "Privatif"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":"https://image.noelshack.com/fichiers/2019/39/6/1569699821-impiana-resort-samui.png"
         },
         {   // 9
             "id": 9,
             "country": "Japon",
             "place": "Tokyo",
             "label": "Grand Arc Hanzomon",
-            "rating": "3*",
+            "rating": 3,
             "upto": "Dès 114€",
             "redirect_label": "VERS LE JAPON — GRAND ARC HANZOMON",
             "tags":[
@@ -178,14 +206,25 @@
                     "label": "Insolite"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":[
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699794-hyatt-regency-creek.png"
+                },
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699563-clos-du-littoral.png"
+                },
+                {
+                    "src":"https://image.noelshack.com/fichiers/2019/39/6/1569699857-japon.jpg"
+                }
+            ]
         },
         {   // 10
             "id": 10,
             "country": "Vietnam",
             "place": "De Hanoï à Hoi An",
             "label": "Entre Culture et Plages",
-            "rating": "4*",
+            "rating": 4,
             "upto": "Dès 779€",
             "redirect_label": "VERS LE VIETNAM — DE HANOÏ À HOI AN",
             "tags":[
@@ -198,7 +237,8 @@
                     "label": "Privatif"
                 }
             ],
-            "link": ""
+            "link": "",
+            "img":"https://image.noelshack.com/fichiers/2019/39/6/1569699821-impiana-resort-samui.png"
         }
     ]
     }

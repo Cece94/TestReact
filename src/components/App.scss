@@ -1,27 +1,104 @@
-.mainDiv {
+$base-text-color: #333333;
+$base-title-color: #e23022;
+$base-title-color-hover: #e22f22c9;
+
+@mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.mainDiv {
+    @include flex-center;
     flex-direction: column;
 }
 
-h1 {
-    color: rgba(194, 39, 39, 0.884);
-    font-size: 5vw;
+.title {
+    color: $base-title-color;
+    @media (min-width: 1025px) {
+        font-size: 3vw;       
+    }
+    @media (max-width: 1024px) {
+        font-size: 5vw;       
+    }
+    
     text-transform: uppercase;
 }
 
-h2 {
-    font-size: 4vw;
+.sub-title {
+    
     margin-top: -10px;
     text-transform: uppercase;
+    color: $base-text-color;
+    @media (min-width: 1025px) {
+        font-size: 2.5vw;       
+    }
+    @media (max-width: 1024px) {
+        font-size: 4vw;       
+    }
 
 }
 
 .topDiv{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     flex-direction: column;
     
 }
+
+.diviser{
+    border: 3px solid $base-text-color;
+    width: 12vw;
+    @media (max-width: 1024px) {
+        border: 2px solid $base-text-color;;     
+    }
+}
+
+.dropdown {
+    margin-top: 20px;
+
+    > button{
+        background-color: white ;
+        color: #001038 ;
+        border-color: white;
+        @include flex-center;
+
+        svg {
+            margin-right: 1vw;
+            transform: rotate(90deg);
+            color: $base-title-color;
+            margin-bottom: 2px;
+        }
+    }
+
+    :after {
+        margin-left: 10 vw;
+        color: $base-title-color ;
+    }
+}
+
+
+
+body {
+    background-color: #efefef !important;
+}
+
+.row{
+    @media (min-width: 767px) {
+        flex-wrap: nowrap !important;   
+    }
+    margin-top: 30px;
+    
+}
+
+.col{
+    padding: 0 !important;
+    flex-grow: 0 !important;
+    margin-left: 20px;
+    background-color: white;
+
+    @media (max-width: 768px) {
+        margin-bottom: 30px;  
+    }
+}
+
