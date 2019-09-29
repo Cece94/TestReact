@@ -15,33 +15,36 @@ import _ from 'lodash';
 class App extends React.Component {
 
     state = {
-        data: data.destinations
+        data,
+        selected: undefined,
+        selectedName: undefined
+    }
+
+    chooseDestination(id, country){
+        this.setState({
+            selected: id,
+            selectedName: country
+        })
+        console.log(this.state.selectedName);
     }
     
     renderDropdown = () => {
-        return (this.state.data.map(el => <Dropdown.Item href="#/action-1" key={el.id}>{el.country}</Dropdown.Item>));
+        return (this.state.data.map((el) => <Dropdown.Item href="#/action-1" key={el.id}  onClick={() => this.chooseDestination(el.id, el.country)}>{el.country}</Dropdown.Item>));
     }
 
-   /* renderImages = () => {
-        return (           
-            this.state.data.map((image, index) => 
-                <Destination destination={image} key={image.id} row={index}></Destination>)                
-        );
-    }*/
-
     groupImage = () => {
-        let images = this.state.data.map((image, index) => <Col key={image.id}><Destination destination={image} key={image.id} row={index}></Destination></Col>)
+        const { selected } = this.state;
+        let images = this.state.data.filter(dest => dest.id === selected || selected === undefined).map((destination, index) => <Col key={destination.id}><Destination destination={destination} key={destination.id} row={index}></Destination></Col>)
         return _.chunk(images,3).map((group,index) => {
             return <Row key={index}>{group}</Row>
         })
     }
 
     render(){
-
         const buttonName = (
             <div>
                 <Icon type="sliders" theme="filled"/>
-                <span>DESTINATIONS</span>
+                <span>{this.state.selected === undefined ? "DESTINATIONS" : this.state.selectedName}</span>
             </div>
         );
 
@@ -56,7 +59,8 @@ class App extends React.Component {
                   <div className="diviser"></div>
               </div>
               <div>
-                    <DropdownButton  id="dropdown-basic-button" className="dropdown" title={buttonName}>         
+                    <DropdownButton  id="dropdown-basic-button" className="dropdown" title={buttonName}>       
+                    <Dropdown.Item href="#/action-1"  onClick={() => this.setState({selected: undefined})}>Toutes</Dropdown.Item>  
                         {this.renderDropdown()}
                     </DropdownButton>
               </div>
