@@ -1,0 +1,106 @@
+
+@import './mixin.scss';
+
+.footer{
+    @include flex-center;
+    flex-direction: column;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+.catchphrase{
+    @include flex-center;
+    flex-direction: column;
+    text-transform: uppercase;
+
+    &-bold{
+        font-weight: bold;
+    }
+
+    div{
+        margin-top: 20px;
+    }
+}
+
+.member{
+    @include flex-center;
+    flex-direction: column;
+    color: white;
+    background-color: $base-title-color;
+    width: 100%;
+    margin-top: 50px;
+    height: 100px;
+    &-bold{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    &-small{
+        font-size: 12px;
+    }
+
+    a{  
+        font-weight: bold;
+        text-decoration: underline !important;
+    }
+}
+
+.subscription{
+    width: 100%;
+    @include flex-center;
+    margin-top: 50px;
+    flex-direction: column;
+
+    >div{
+        display: flex;
+        align-items: center;
+        justify-content: space-around; 
+        width: 100%;
+
+        @media (max-width: 767px) {
+            flex-direction: column;  
+        }
+    }
+
+    .step{
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+
+        @media (max-width: 767px) {
+            justify-content: flex-start;
+            padding-left:80px;  
+        }
+
+        >div:first-child{
+            font-size: 50px;
+            font-weight: bold;
+            color: $base-title-color;
+        }
+
+        &-detail{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            text-transform: uppercase;
+
+            & >span:nth-child(2){
+                color: $base-title-color;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &-button{
+        >.btn{
+            margin-top: 30px;
+            width: 30%;  
+
+            @media (max-width: 767px) {
+            margin-left: 30px;
+            width: 40%;
+            }
+        
+        }
+     
+    }
+}

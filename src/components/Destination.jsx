@@ -33,7 +33,7 @@ class Destination extends React.Component {
                                 {this.renderTags(props.tags)}
                             </div >
                         </div>
-                        <Button type="default"><Icon type="right" /></Button>
+                        <Button className="btn-small"type="default"><Icon type="right" /></Button>
                 </div>
             </div>   
         )

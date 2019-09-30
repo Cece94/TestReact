@@ -1,0 +1,17 @@
+$base-text-color: #333333;
+$base-title-color: #e23022;
+$base-title-color-hover: #e22f22c9;
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bottom-right{
+    position: absolute;
+    right: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white; 
+}

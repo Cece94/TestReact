@@ -1,12 +1,5 @@
-$base-text-color: #333333;
-$base-title-color: #e23022;
-$base-title-color-hover: #e22f22c9;
 
-@mixin flex-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+@import './mixin.scss';
 
 
 .mainDiv {
@@ -27,8 +20,6 @@ $base-title-color-hover: #e22f22c9;
 }
 
 .sub-title {
-    
-    margin-top: -10px;
     text-transform: uppercase;
     color: $base-text-color;
     @media (min-width: 1025px) {
@@ -84,7 +75,7 @@ body {
 }
 
 .row{
-    @media (min-width: 767px) {
+    @media (min-width: 1200px) {
         flex-wrap: nowrap !important;   
     }
     margin-top: 30px;
@@ -102,3 +93,30 @@ body {
     }
 }
 
+.fixedFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #333333;
+    color: white;
+    z-index: 100;
+    text-transform: uppercase;
+    @include flex-center;
+    flex-direction: column;
+
+    > div > span{
+        font-weight: bold;
+    }
+
+    .diviser{
+        margin-top: 20px;
+        border-color: $base-title-color;
+    }
+
+}
+
+.container{
+    padding-left: 0 !important;
+}

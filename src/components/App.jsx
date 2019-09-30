@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Destination from './Destination';
+import Footer from './Footer';
 import { ifStatement } from '@babel/types';
 import _ from 'lodash';
 
@@ -68,6 +69,12 @@ class App extends React.Component {
           <Container>
               {this.groupImage()}     
           </Container>
+          <Footer></Footer>
+          <div className="fixedFooter">
+              <div>Rejoignez <span>emirates | the list</span></div>
+              <div>Vol + hôtel négociés jusqu'à -70%</div>
+              <div className="diviser"></div>
+          </div>
         </div>
         );
     }
